@@ -2,7 +2,7 @@
 
 Setup instructions
 1. clone the Repository
-   git clone https://github.com/your-username/userfacet-email.git
+   git clone https://github.com/shivani-mca2025/userfacet-email 
   cd userfacet-email
 
 2. Install dependencies
