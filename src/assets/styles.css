@@ -1,0 +1,160 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #6a11cb, #ff6f91);
+  color: white;
+  padding: 14px 20px;
+}
+
+header h2 {
+  margin: 0;
+}
+
+header .avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: white;
+  color: #6a11cb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.search-box {
+  margin-left: 20px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 0.95em;
+  outline: none;
+}
+
+.search-box:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 6px rgba(106, 17, 203, 0.5);
+}
+
+.inbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.mail-card {
+  background: #fff8e1;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+  cursor: pointer;
+}
+
+.mail-card:nth-child(2n) {
+  background: #e1f5fe;
+}
+
+.mail-card:nth-child(3n) {
+  background: #f3e5f5;
+}
+
+.mail-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #ffffff;
+}
+
+.mail-card h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+}
+
+.mail-card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.clip {
+  float: right;
+  font-size: 18px;
+  color: #ff6f91;
+}
+
+.thread-view {
+  padding: 24px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 12px;
+  border-left: 6px solid #6a11cb;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.thread-view button {
+  margin-bottom: 16px;
+  padding: 8px 14px;
+  border: none;
+  background: linear-gradient(90deg, #6a11cb, #ff6f91);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.thread-view button:hover {
+  opacity: 0.9;
+}
+
+
+.compose-view {
+  padding: 24px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.compose-view h3 {
+  margin-top: 0;
+  color: #6a11cb;
+}
+
+.compose-view input,
+.compose-view textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+.compose-view textarea {
+  height: 120px;
+  resize: none;
+}
+
+.send-btn {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: none;
+  background: linear-gradient(90deg, #6a11cb, #ff6f91);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  opacity: 0.9;
+}
